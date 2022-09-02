@@ -1,0 +1,16 @@
+name: Add idea stub
+on:
+  workflow_dispatch:
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    permissions:
+      discussions: write
+    steps:
+      - run: |
+          gh api graphql -f query='mutation {
+            createDiscussion(input: {repositoryId: "R_kgDOH5YJeA", categoryId: "DIC_kwDOH5YJeM4CRGWn", body: "stub", title: "stub"}) {
+            discussion {
+              url
+            }
+          }'
