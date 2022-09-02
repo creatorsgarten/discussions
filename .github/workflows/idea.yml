@@ -10,8 +10,9 @@ jobs:
       - run: |
           gh api graphql -f query='mutation {
             createDiscussion(input: {repositoryId: "R_kgDOH5YJeA", categoryId: "DIC_kwDOH5YJeM4CRGWn", body: "stub", title: "stub"}) {
-            discussion {
-              url
+              discussion {
+                url
+              }
             }
           }'
         env:
