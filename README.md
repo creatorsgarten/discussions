@@ -1,1 +1,1 @@
-# [discussions](https://github.com/creatorsgarten/discussions/discussions)
+# [Discussions](https://github.com/orgs/creatorsgarten/discussions)
