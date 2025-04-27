@@ -119,29 +119,6 @@ If you don't have a profile yet, see [creating a public profile](https://wiki.cr
       type: "markdown",
       attributes: {
         value: `
-## Your GitHub username
-
-Please provide your GitHub username so we can match you to your profile.
-        `.trim(),
-      },
-    },
-    {
-      type: "input",
-      id: "github_username",
-      attributes: {
-        label: "GitHub username",
-        description: "Enter your GitHub username (without the @ symbol)",
-        placeholder: "username",
-        required: true,
-      },
-      validations: {
-        required: true,
-      },
-    },
-    {
-      type: "markdown",
-      attributes: {
-        value: `
 ## Event contributions
 
 Select the events you've contributed to and specify your role in each event.
