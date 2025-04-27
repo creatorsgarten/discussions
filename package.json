@@ -1,0 +1,17 @@
+{
+  "name": "discussions",
+  "module": "index.ts",
+  "type": "module",
+  "private": true,
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "ofetch": "^1.4.1",
+    "prettier": "^3.5.3",
+    "yaml": "^2.7.1"
+  }
+}

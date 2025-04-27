@@ -1,12 +1,581 @@
-title: "Event contributor list update request"
+title: Event contributor list update request
 body:
   - type: markdown
     attributes:
-      value: |
-        This is text that will show up in the template!
+      value: |-
+        # Bulk update event contribution list
+
+        This form is for contributors who have participated in multiple Creatorsgarten events but don't see themselves on the event contributor lists.
+
+        Adding yourself to individual event pages can be tedious when you've been involved in multiple events, so we created this form to streamline the process.
+
+        ## Prerequisites
+
+        Before proceeding, make sure you have a public profile on our wiki. Your name must be listed on the [People page](https://wiki.creatorsgarten.org/people).
+
+        If you don't have a profile yet, see [creating a public profile](https://wiki.creatorsgarten.org/people#creating-a-public-profile).
   - type: checkboxes
     attributes:
-      label: I have created a public profile.
+      label: Public profile confirmation
+      description: Please confirm that you have created a public profile
       options:
-        - label: This one!
+        - label: I have already created a public profile on the wiki
           required: true
+  - type: markdown
+    attributes:
+      value: |-
+        ## Your GitHub username
+
+        Please provide your GitHub username so we can match you to your profile.
+  - type: input
+    id: github_username
+    attributes:
+      label: GitHub username
+      description: Enter your GitHub username (without the @ symbol)
+      placeholder: username
+      required: true
+    validations:
+      required: true
+  - type: markdown
+    attributes:
+      value: |-
+        ## Event contributions
+
+        Select the events you've contributed to and specify your role in each event.
+  - type: checkboxes
+    id: event_market
+    attributes:
+      label: 2025 - "Dataset Marketplace" [market]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bkkjs22
+    attributes:
+      label: '2025 - "BKK.JS #22" [bkkjs22]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_culture
+    attributes:
+      label: 2025 - "AI x Culture Symposium" [culture]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht8125
+    attributes:
+      label: 2024 - "The Stupid Hackathon Thailand X KMUTT ครั้งที่ 8.125" [sht8125]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bac
+    attributes:
+      label: 2024 - "Browser automation challenges" [bac]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_javascriptbangkok2
+    attributes:
+      label: 2024 - "JavaScript Bangkok 2.0.0" [javascriptbangkok2]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bkkjs21
+    attributes:
+      label: '2024 - "BKK.JS #21" [bkkjs21]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_worldwithoutwork
+    attributes:
+      label: 2024 - "เศรษฐกิจเอไอกับโลกไร้งาน" [worldwithoutwork]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_investorgamble
+    attributes:
+      label: 2024 - "Invest or Gamble? การเงินนอกห้องเรียน" [investorgamble]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht8
+    attributes:
+      label: 2024 - "THE STIPUD HONKATHACK IN THAILAND DAN OF SMILE FARANG TOOK JAI CHOB SI" [sht8]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bkkjs20
+    attributes:
+      label: '2024 - "BKK.JS #20" [bkkjs20]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_wind2
+    attributes:
+      label: '2024 - "Code in the Wind #2" [wind2]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_algorave
+    attributes:
+      label: 2024 - "a bit of thai tunes" [algorave]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bkkjs19
+    attributes:
+      label: '2024 - "BKK.JS #19" [bkkjs19]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_hacktoberfest2023
+    attributes:
+      label: 2023 - "Hacktoberfest Thailand 2023" [hacktoberfest2023]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_dotnet1
+    attributes:
+      label: 2023 - ".NET Community Meetup" [dotnet1]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_github2
+    attributes:
+      label: 2023 - "GitHub Community Meetup" [github2]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_typescript2
+    attributes:
+      label: 2023 - "TypeScript Community Meetup" [typescript2]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_creativecodingmeetup2
+    attributes:
+      label: 2023 - "Coding colorful sounds" [creativecodingmeetup2]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_learn2
+    attributes:
+      label: 2023 - "How To Learn Almost Everything" [learn2]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_github1
+    attributes:
+      label: 2023 - "GitHub Community Meetup" [github1]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_cssmeetup0823
+    attributes:
+      label: 2023 - "CSS Meetup 16.08.2023" [cssmeetup0823]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_mathsatsundown
+    attributes:
+      label: 2023 - "Maths at Sundown" [mathsatsundown]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_typescript1
+    attributes:
+      label: 2023 - "TypeScript Community Meetup" [typescript1]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sideproject
+    attributes:
+      label: 2023 - "Side Project Showdown" [sideproject]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bkkjs18
+    attributes:
+      label: '2023 - "Bkk.js #18 คิดถึงเลยอยากเจอ" [bkkjs18]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_functional2
+    attributes:
+      label: '2023 - "Functional Meetup #2: Elm for Frontend Developers" [functional2]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht7
+    attributes:
+      label: 2023 - "The โง่ Hackathon ครั้งที่ 7 แห่งประเทศ Thailand" [sht7]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_reactmeetup0623
+    attributes:
+      label: 2023 - "React Meetup 06/23" [reactmeetup0623]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_msbuild2023
+    attributes:
+      label: 2023 - "Microsoft Build - After Party Thailand" [msbuild2023]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_functional
+    attributes:
+      label: '2023 - "Functional Programming Meetup #1" [functional]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_vscodeday2023
+    attributes:
+      label: 2023 - "VS Code Day 2023 - Thailand" [vscodeday2023]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_creativecodingmeetup
+    attributes:
+      label: 2023 - "Creative Coding Meetup" [creativecodingmeetup]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bangkok
+    attributes:
+      label: 2023 - "Bangkok Open Source Hackathon" [bangkok]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_love2
+    attributes:
+      label: '2023 - "Data Driven Love #2" [love2]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bkkjs17
+    attributes:
+      label: '2022 - "Bkk.js #17 - Developer Showtime" [bkkjs17]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_hacktoberfest2022
+    attributes:
+      label: 2022 - "Hacktoberfest Thailand 2022" [hacktoberfest2022]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_reactmeetup0922
+    attributes:
+      label: 2022 - "React Meetup 09/22" [reactmeetup0922]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_golf1
+    attributes:
+      label: '2022 - "Code Golf Party #1" [golf1]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_scisart
+    attributes:
+      label: '2022 - "Sciยศาสตร์ Night: คืนไสยศาสตร์เดือนวิทยาศาสตร์กรุงเทพฯ" [scisart]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht6
+    attributes:
+      label: 2022 - "The ៦th Stupid Hackathon in Thailand" [sht6]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_svelte1
+    attributes:
+      label: '2022 - "Svelte Meetup Bangkok #1" [svelte1]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_wind
+    attributes:
+      label: '2022 - "Code in the Wind #1" [wind]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bio
+    attributes:
+      label: 2022 - "Biological Aesthetic of Nature, and How to Remain Curious Under Oppressive Education" [bio]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_marshmallow
+    attributes:
+      label: 2022 - "Marshmallow Campfire!" [marshmallow]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_polaryz1
+    attributes:
+      label: '2022 - "Polaryz Camp #1" [polaryz1]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_learn
+    attributes:
+      label: 2022 - "How to Learn (Almost) Anything" [learn]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_graphql
+    attributes:
+      label: 2021 - "GraphQL Meetup 10.0" [graphql]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht5
+    attributes:
+      label: 2021 - "The 5th StuP1d H@CK THaIL@Nd (Online)" [sht5]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_hacktoberfest2020
+    attributes:
+      label: 2020 - "Hacktoberfest Thailand 2020" [hacktoberfest2020]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_bkkjs14
+    attributes:
+      label: 2020 - "BKK.JS 14 Return of the BKK.JS" [bkkjs14]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht4
+    attributes:
+      label: 2020 - "stupid hackathon thailand the fourth / virtual 2020 (Online)" [sht4]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_hacktoberfest2019
+    attributes:
+      label: 2019 - "Hacktoberfest Open Hack Day BKK 2019" [hacktoberfest2019]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht3
+    attributes:
+      label: '2019 - "The Stupid Hackathon Thailand #3" [sht3]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_ycc1
+    attributes:
+      label: 2019 - "Young Creators' Camp" [ycc1]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_love
+    attributes:
+      label: 2019 - "Data Driven Love จีบแบบ Dev ยังไงไม่ให้นก" [love]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_codeplearn
+    attributes:
+      label: 2019 - "CodePlearn โค้ดเพลิน - Code, Play, and Learn!" [codeplearn]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht2
+    attributes:
+      label: '2018 - "The Stupid Hackathon Thailand #2" [sht2]'
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_sht1
+    attributes:
+      label: 2017 - "The Stupid Hackathon Bangkok" [sht1]
+      description: Check all that apply
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: markdown
+    attributes:
+      value: |-
+        ## Thank you!
+
+        Your contribution information will be reviewed and added to the respective event pages. This process may take a few days.
