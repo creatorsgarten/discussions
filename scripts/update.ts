@@ -143,7 +143,6 @@ for (const event of events) {
     id: `event_${slug}`,
     attributes: {
       label: `${event.frontMatter.event.date.slice(0, 4)} - "${eventName}" [${slug}]`,
-      description: "Check all that apply",
       options: [
         { label: "I volunteered to help in this event" },
         { label: "I was a speaker or presenter in this event" },
