@@ -94,11 +94,9 @@ This form is for contributors who have participated in multiple Creatorsgarten e
 
 Adding yourself to individual event pages can be tedious when you've been involved in multiple events, so we created this form to streamline the process.
 
-## Prerequisites
-
-Before proceeding, make sure you have a public profile on our wiki. Your name must be listed on the [People page](https://wiki.creatorsgarten.org/people).
-
-If you don't have a profile yet, see [creating a public profile](https://wiki.creatorsgarten.org/people#creating-a-public-profile).
+> [!IMPORTANT]
+Before proceeding, make sure you have a public profile on our wiki. Your name must be listed on the [People page](https://creatorsgarten.org/wiki/People).
+If you don't have a profile yet, see [creating a public profile](https://creatorsgarten.org/wiki/People#creating-a-public-profile).
         `.trim(),
       },
     },
