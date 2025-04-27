@@ -6,7 +6,7 @@ body:
         This is text that will show up in the template!
   - type: checkboxes
     attributes:
-      label: Check that box!
+      label: I have created a public profile.
       options:
         - label: This one!
-        - label: I won't stop you if you check this one, too
+          required: true
