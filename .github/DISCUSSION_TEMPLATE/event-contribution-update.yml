@@ -26,6 +26,30 @@ body:
 
         Select the events you've contributed to and specify your role in each event.
   - type: checkboxes
+    id: event_bkkjs23
+    attributes:
+      label: '2025 - "BKK.JS #23" [bkkjs23]'
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_aliens
+    attributes:
+      label: 2025 - "A Conversation with Aliens? Imagining First Contact" [aliens]
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
+    id: event_soundcodeplay
+    attributes:
+      label: '2025 - "sonic_thread: SOUND/CODE/PLAY" [soundcodeplay]'
+      options:
+        - label: I volunteered to help in this event
+        - label: I was a speaker or presenter in this event
+        - label: I was a director of this event
+  - type: checkboxes
     id: event_market
     attributes:
       label: 2025 - "Dataset Marketplace" [market]
